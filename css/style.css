@@ -1,0 +1,425 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #28377e;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #f1602c;
+}
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
+.banner h1 {
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.icon{   
+    position: absolute;   
+    top: 80%;    
+    left: 50%;    
+    transform: translateX(-50%);    
+    color: #fff;    
+    font-size: 20px;
+    animation: updown .9s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes updown {
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+.row-hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.who_we_are{
+    background-image: url(../images/whoweare.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .4s ease-in-out;
+}
+.who_we_are span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background: #28377e;
+    transition: all .8s ease-in-out;
+}
+.who_we_are:hover span{
+    width: 100px;
+    background: #f15926;
+}
+.who_we_are h1{
+    color: #28377e;
+    font-size: 30px;
+    text-transform: uppercase;    
+    font-weight: 600;
+}
+.who_we_are p{   
+    color: #7c8a96;
+    margin-top: 15px;
+}
+.who_we_are img{
+    opacity: .5;
+    transition: all .8s ease-in-out;
+}
+.who_we_are img:hover{
+    opacity: 1;
+}
+
+.what-we-do{
+    background-color: #f7f8f9;
+    background-image: url(../images/whatwedo.png);
+    background-position: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    transition: all .8s ease-in-out;
+}
+.what-we-do:hover{
+    background-size: 65%;
+}
+.heading span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background: #28377e;
+    transition: all .4s ease-in-out;
+}
+.what-we-do:hover span{
+    width: 100px;
+    background: #f15926;
+}
+.heading h1{
+    color: #28377e;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.what-we-do .img{
+    position: relative;
+}
+.what-we-do .img::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: all ease-in-out .6s;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,211aed+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(33,26,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(33,26,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(33,26,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#211aed',GradientType=0 ); /* IE6-9 */
+
+}
+
+.what-we-do .img:hover::before{
+    height: 100%;
+
+}
+.what-we-do .img .img-resize{
+    height: 450px;
+    object-fit: cover;
+    object-position: center center;
+}
+.what-we-do .img h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.what-we-do .img i{ 
+    position: absolute;   
+    top: 80%;
+    left: 40%;  
+    transform: translate(-80%, -50%);   
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.what-we-do .img:hover h3{
+    opacity: 1;
+    top: 50%;
+}
+.what-we-do .img:hover i{
+    opacity: 1;
+    left: 50%;
+}
+.attorney{
+    background-image: url(../images/attorney.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.attorney span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background: #28377e;
+    transition: all .4s ease-in-out;
+}
+.attorney:hover span{
+    width: 100px;
+    background: #f15926;
+}
+.attorney h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.attorney p{
+    color: #98b8d8;
+    margin-bottom: 20px;
+}
+.attorney a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+a:hover{
+    color: #f15926;
+}
+.attorney-img{
+    position: relative;
+}
+.attorney-img::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: all ease-in-out .6s;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,211aed+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(40,55,126,0) 0%, rgba(33,26,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(40,55,126,0) 0%,rgba(33,26,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(40,55,126,0) 0%,rgba(33,26,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0028377e', endColorstr='#211aed',GradientType=0 ); /* IE6-9 */
+
+}
+.attorney-img:hover::before{
+    height: 100%;
+}
+.attorney-img .img-resize{
+    height: 500px;
+    object-fit: cover;
+    object-position: center center;
+}
+.attorney-img h3{
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.attorney-img:hover h3{
+    opacity: 1;
+    bottom: 10%;
+}
+.heading-2 span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background: #28377e;
+    transition: all .4s ease-in-out;
+}
+.language{
+    background-image: url(../images/whoweare.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.language:hover .heading-2 span{
+    width: 100px;
+    background: #f15926;
+}
+.heading-2 h1{
+    color: #28377e;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.language h3{
+    color: #28377e;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.forh3 span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background: #9699a7;
+    transition: all .4s ease-in-out;
+    margin: 10px 0px;
+}
+.forh3:hover span{
+    width: 30px;
+    background: #f15926;
+}
+.language p{
+    color: #0c1234;
+    margin-bottom: 15px;
+}
+.language a{
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: #28377e;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+.language a:hover{
+    color: #f15926;
+}
+
+.contact{
+
+}
+.heading-3 span{
+    display: inline-block;
+    width: 0px;
+    height: 3px;
+    background: #28377e;
+    transition: all .4s ease-in-out;
+}
+.contact:hover .heading-3 span{
+    width: 100px;
+    background: #f15926;
+}
+.heading-3 h1{
+    color: #ffffff;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.contact{
+    background: #28377e;
+}
+.contact form input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #f7f8f8;
+    border-radius: 0;
+    caret-color: #fff;
+    padding-left: 0px;
+}
+.contact form input:focus{
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.contact form input::placeholder{
+    color: #fff;
+}
+.contact form textarea{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #f7f8f8;
+    border-radius: 0;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 0px;
+}
+.contact form textarea:focus{
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.contact form textarea::placeholder{
+    color: #fff;
+}
+.contact form input[type=email]{
+    color: #fff;
+}
+.contact form textarea[name=Message]{
+    color: #fff;
+}
+.contact form button{
+    background: #f15e2b;
+    border: 1px solid #f15e2b;
+    border-radius: 0; 
+    padding: 5px 30px;
+}
+.contact form button:hover{
+    background: #f15e2b;
+}
+footer{
+    background-color: #0d1234;
+}
+.footer-content{
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.terms{
+    width: 30%;
+    float: left;
+}
+.terms ul{
+    list-style: none;
+}
+.terms ul li{
+    float: left;
+    text-transform: capitalize;
+    color: #999999;
+}
+.social{
+    width: 30%;
+    float: right;
+}
+.social ul{
+    list-style: none;
+    float: right;
+}
+.social ul li{
+    float: left;
+}
+.social ul li i{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+    transition: all .6s cubic-bezier(0, 0.86, 0.46, 1.13);
+}
+.social ul li i:hover{
+    color: #28377e;
+}
